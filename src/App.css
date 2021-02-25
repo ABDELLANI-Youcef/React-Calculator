@@ -1,0 +1,25 @@
+/* global settings */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  min-width: 22rem;
+  min-height: 44rem;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  min-width: 22rem;
+  display: block;
+  background-color: #ecc171;
+}
