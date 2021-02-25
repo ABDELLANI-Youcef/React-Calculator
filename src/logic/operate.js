@@ -18,7 +18,7 @@ const operate = (numberOne, numberTwo, operation) => {
       return first.div(numberTwo);
 
     default:
-      return first.div(numberTwo).times(100);
+      return first.div(100).times(numberTwo);
   }
 }
 
