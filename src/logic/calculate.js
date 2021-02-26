@@ -26,7 +26,7 @@ const calculate = (calculator, buttonName) => {
       default:
         if (operation !== null) {
           total = operate(total, next, operation);
-        } else {
+        } else if (next !== null) {
           total = next;
         }
         operation = buttonName;
