@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
 const Button = ({ name, clickHandler }) => {
-  const handleClick = buttonName => {
-    clickHandler(buttonName);
+  const handleClick = () => {
+    clickHandler(name);
   };
   return (
     <button type="button" onClick={handleClick}>{name}</button>
