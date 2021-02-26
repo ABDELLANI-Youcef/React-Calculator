@@ -5,8 +5,7 @@ const calculate = (calculator, buttonName) => {
   const nums = ['.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   if (nums.includes(buttonName)) {
     next = next === null ? buttonName : next + buttonName;
-  }
-  else {
+  } else {
     switch (buttonName) {
       case 'AC':
         total = null;
@@ -27,8 +26,7 @@ const calculate = (calculator, buttonName) => {
       default:
         if (operation !== null) {
           total = operate(total, next, operation);
-        }
-        else {
+        } else {
           total = next;
         }
         operation = buttonName;
