@@ -13,6 +13,10 @@ const calculate = (calculator, buttonName) => {
       next = 0;
       break;
 
+    case '=':
+      next = total;
+      break;
+
     default:
       total = operate(total, next, buttonName);
       break;

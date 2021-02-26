@@ -5,6 +5,7 @@ const operate = (numberOne, numberTwo, operation) => {
   switch (operation) {
     case '+':
       return first.plus(numberTwo);
+
     case '-':
       return first.minus(numberTwo);
 
