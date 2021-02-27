@@ -14,6 +14,7 @@ const calculate = (calculator, buttonName) => {
         break;
 
       case '+/-':
+
         if (total !== null) {
           total = operate(total, '-1', 'X');
         }
