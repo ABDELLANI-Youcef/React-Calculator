@@ -14,23 +14,44 @@ const calculate = (calculator, buttonName) => {
         break;
 
       case '+/-':
-        total = operate(total, '-1', 'X');
-        next = operate(next, '-1', 'X');
+
+        if (total !== null) {
+          total = operate(total, '-1', 'X');
+        }
+
+        if (next !== null) {
+          next = operate(next, '-1', 'X');
+        }
         break;
 
       case '=':
-        total = operate(total, next, operation);
+        if (next === '0' && operation === '÷') {
+          total = 'ERROR, DIVISION BY ZERO';
+        } else if (total === null && operation === null) {
+          total = next;
+        } else {
+          total = operate(total, next, operation);
+        }
         next = null;
+        operation = null;
         break;
 
       default:
-        if (operation !== null) {
-          total = operate(total, next, operation);
-        } else if (next !== null) {
-          total = next;
+        if (next === '0' && operation === '÷') {
+          total = 'ERROR, DIVISION BY ZERO';
+          next = null;
+          operation = null;
+        } else if ((operation === null || operation === 'X' || operation === '÷') && buttonName === '-' && next === null) {
+          next = buttonName;
+        } else {
+          if (operation !== null) {
+            total = operate(total, next, operation);
+          } else if (next !== null) {
+            total = next;
+          }
+          operation = buttonName;
+          next = null;
         }
-        operation = buttonName;
-        next = null;
         break;
     }
   }
