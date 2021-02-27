@@ -21,7 +21,6 @@ export default class APP extends React.Component {
     });
   }
 
-
   render() {
     const { next, total } = this.state;
     let result;
