@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import Display from './Display';
 import Buttonspanel from './ButtonsPanel';
 import calculate from '../logic/calculate';
+import Navbar from './Navbar';
 
-const App = () => {
+const Calculator = () => {
   const [calculator, setCalculator] = useState({ total: null, next: null, operation: null });
   const handleClick = buttonName => {
     setCalculator(calculate(calculator, buttonName));
@@ -21,10 +22,11 @@ const App = () => {
 
   return (
     <>
+      <Navbar />
       <Display result={result} />
       <Buttonspanel clickHandler={handleClick} />
     </>
   );
 };
 
-export default App;
+export default Calculator;
