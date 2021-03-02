@@ -1,0 +1,5 @@
+.row {
+  height: 100px;
+  display: flex;
+  width: 700px;
+}
