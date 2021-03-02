@@ -1,30 +1,17 @@
-import React, { useState } from 'react';
-import Display from './Display';
-import Buttonspanel from './ButtonsPanel';
-import calculate from '../logic/calculate';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './Home';
+import Quote from './Calculator';
+import Calculator from './Quote';
 
-const App = () => {
-  const [calculator, setCalculator] = useState({ total: null, next: null, operation: null });
-  const handleClick = buttonName => {
-    setCalculator(calculate(calculator, buttonName));
-  };
-
-  const { next, total } = calculator;
-  let result;
-  if (next !== null) {
-    result = next;
-  } else if (total !== null) {
-    result = total;
-  } else {
-    result = '0';
-  }
-
-  return (
-    <>
-      <Display result={result} />
-      <Buttonspanel clickHandler={handleClick} />
-    </>
-  );
-};
+const App = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/calculator" component={Calculator} />
+      <Route exact path="/quote" component={Quote} />
+    </Switch>
+  </BrowserRouter>
+);
 
 export default App;
