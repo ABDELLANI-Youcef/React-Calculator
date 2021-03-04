@@ -85,7 +85,7 @@ describe('The arithmitic operations', () => {
     const firstState = { total: '1', operation: '+', next: '1' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('2');
-  })
+  });
 
   test('should make addition correctly 2', () => {
     const firstState = { total: '-1', operation: '+', next: '1' };
@@ -97,43 +97,43 @@ describe('The arithmitic operations', () => {
     const firstState = { total: '1', operation: '-', next: '1' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('0');
-  })
+  });
 
   test('should make substraction correctly 2', () => {
     const firstState = { total: '-1', operation: '-', next: '1' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('-2');
-  })
+  });
 
   test('should make multiplication correctly', () => {
     const firstState = { total: '1', operation: 'X', next: '9' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('9');
-  })
+  });
 
   test('should make multiplication correctly 2', () => {
     const firstState = { total: '2', operation: 'X', next: '-9' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('-18');
-  })
+  });
 
   test('should make division correctly', () => {
     const firstState = { total: '2', operation: '÷', next: '5' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('0.4');
-  })
+  });
 
   test('should make division correctly 2', () => {
     const firstState = { total: '2', operation: '÷', next: '-5' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('-0.4');
-  })
+  });
 
   test('should make percentage operation correctly', () => {
     const firstState = { total: '17', operation: '%', next: '150' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('25.5');
-  })
+  });
 
   test('should write a warning when trying to divide by zero', () => {
     const firstState = { total: '1', operation: '÷', next: '0' };
@@ -141,21 +141,21 @@ describe('The arithmitic operations', () => {
     expect(secondState.total).toEqual('ERROR, DIVISION BY ZERO');
     expect(secondState.next).toBeNull();
     expect(secondState.operation).toBeNull();
-  })
+  });
 
   test('should return -1=-1', () => {
-    const firstState = {total:null, operation: null, next: '-1'};
+    const firstState = { total: null, operation: null, next: '-1' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('-1');
     expect(secondState.next).toBeNull();
     expect(secondState.operation).toBeNull();
-  })
+  });
 
   test('should return 1=1', () => {
-    const firstState = {total:null, operation: null, next: '1'};
+    const firstState = { total: null, operation: null, next: '1' };
     const secondState = calculate(firstState, '=');
     expect(secondState.total).toEqual('1');
     expect(secondState.next).toBeNull();
     expect(secondState.operation).toBeNull();
-  })
+  });
 });

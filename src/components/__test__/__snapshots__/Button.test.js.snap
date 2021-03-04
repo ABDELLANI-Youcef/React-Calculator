@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shoud make the width 50% if the wide attribut is true 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "white",
+      "width": "50%",
+    }
+  }
+  type="button"
+>
+  0
+</button>
+`;
+
+exports[`should make the color of button white if the color is false 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "white",
+      "width": "25%",
+    }
+  }
+  type="button"
+>
+  AC
+</button>
+`;
+
+exports[`should render button correct 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "orange",
+      "width": "25%",
+    }
+  }
+  type="button"
+>
+  +
+</button>
+`;

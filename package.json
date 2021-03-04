@@ -47,6 +47,7 @@
     "eslint-plugin-react": "7.20.x",
     "eslint-plugin-react-hooks": "2.5.x",
     "jest-dom": "^4.0.0",
+    "prettier": "2.2.1",
     "react-test-renderer": "^17.0.1",
     "stylelint": "13.3.x",
     "stylelint-config-standard": "20.0.x",
