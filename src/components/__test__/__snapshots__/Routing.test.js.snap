@@ -1,0 +1,409 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Calculator page 1`] = `
+Array [
+  <div
+    className="navbar"
+  >
+    <div>
+      Math Magicians
+    </div>
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+       |  
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        calculator
+      </a>
+       | 
+      <a
+        href="/quote"
+        onClick={[Function]}
+      >
+        Quote
+      </a>
+    </div>
+  </div>,
+  <div
+    className="display"
+    data-testid="display"
+  >
+    0
+  </div>,
+  <div
+    className="row"
+  >
+    <button
+      className="button"
+      data-testid="AC"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      className="button"
+      data-testid="+/-"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className="button"
+      data-testid="%"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="button"
+      data-testid="÷"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      ÷
+    </button>
+  </div>,
+  <div
+    className="row"
+  >
+    <button
+      className="button"
+      data-testid="7"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className="button"
+      data-testid="8"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className="button"
+      data-testid="9"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="button"
+      data-testid="X"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      X
+    </button>
+  </div>,
+  <div
+    className="row"
+  >
+    <button
+      className="button"
+      data-testid="4"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className="button"
+      data-testid="5"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className="button"
+      data-testid="6"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="button"
+      data-testid="-"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      -
+    </button>
+  </div>,
+  <div
+    className="row"
+  >
+    <button
+      className="button"
+      data-testid="1"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="button"
+      data-testid="2"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="button"
+      data-testid="3"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="button"
+      data-testid="+"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      +
+    </button>
+  </div>,
+  <div
+    className="row"
+  >
+    <button
+      className="button"
+      data-testid="0"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "50%",
+        }
+      }
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className="button"
+      data-testid="."
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="button"
+      data-testid="="
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "orange",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      =
+    </button>
+  </div>,
+]
+`;
+
+exports[`should render Quotes page 1`] = `
+<div>
+  <div
+    className="navbar"
+  >
+    <div>
+      Math Magicians
+    </div>
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+       |  
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        calculator
+      </a>
+       | 
+      <a
+        href="/quote"
+        onClick={[Function]}
+      >
+        Quote
+      </a>
+    </div>
+  </div>
+  <p>
+    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
+  </p>
+</div>
+`;
+
+exports[`should render the home page of math magicien correctly 1`] = `
+<div>
+  <div>
+    <div
+      className="navbar"
+    >
+      <div>
+        Math Magicians
+      </div>
+      <div>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+         |  
+        <a
+          href="/calculator"
+          onClick={[Function]}
+        >
+          calculator
+        </a>
+         | 
+        <a
+          href="/quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </div>
+    </div>
+    <h1>
+      Welcome to my page!
+    </h1>
+    <p>
+      This is my React project that aims to make a simple calculator.
+    </p>
+    <p>
+      It is created using React and lets you make the next operations: addition, substraction, multiplication, division and percentage
+    </p>
+  </div>
+</div>
+`;
