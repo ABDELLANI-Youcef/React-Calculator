@@ -3,6 +3,7 @@
 exports[`shoud make the width 50% if the wide attribut is true 1`] = `
 <button
   className="button"
+  data-testid="0"
   onClick={[Function]}
   style={
     Object {
@@ -19,6 +20,7 @@ exports[`shoud make the width 50% if the wide attribut is true 1`] = `
 exports[`should make the color of button white if the color is false 1`] = `
 <button
   className="button"
+  data-testid="AC"
   onClick={[Function]}
   style={
     Object {
@@ -35,6 +37,7 @@ exports[`should make the color of button white if the color is false 1`] = `
 exports[`should render button correct 1`] = `
 <button
   className="button"
+  data-testid="+"
   onClick={[Function]}
   style={
     Object {
