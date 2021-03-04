@@ -3,7 +3,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import Button from '../Button';
 
-test('renders learn react link', () => {
+test('renders Button', () => {
   render(
     <Button name="+" wide={false} color clickHandler={() => true} />,
   );
@@ -25,7 +25,7 @@ it('shoud make the width 50% if the wide attribut is true', () => {
   expect(button).toMatchSnapshot();
 });
 
-it('should make the color of button white if the color is false', ()=>{
+it('should make the color of button white if the color is false', () => {
   const button = renderer.create(
     <Button name="AC" wide={false} color={false} clickHandler={() => true} />,
   ).toJSON();
