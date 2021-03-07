@@ -1,4 +1,4 @@
-# Javascript Game
+# React Calculator
 
 ## The table of contents
 
@@ -55,7 +55,7 @@ After making the local copy of the repository:
 - get inside the repository folder;
 - setup the dependencies of the project: in the terminal run: ```yarn install```
 - enter the command: ```yarn start```.
-- then you get the game in the localhost in your web browser.
+- then you get the calculator in the localhost in your web browser.
 
 ## Author
 

@@ -12,7 +12,7 @@ const Button = ({
   const width = wide ? '50%' : '25%';
 
   return (
-    <button type="button" onClick={handleClick} className={styles.button} style={{ backgroundColor: backgroud, width }}>{name}</button>
+    <button type="button" data-testid={name} onClick={handleClick} className={styles.button} style={{ backgroundColor: backgroud, width }}>{name}</button>
   );
 };
 Button.propTypes = {
